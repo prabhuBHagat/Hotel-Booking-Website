@@ -1,0 +1,297 @@
+@import 'common.css';
+
+:root {
+    --textcolor: #222222;
+    --txtcolor: #222222;
+    --listText:#3c3939d6;
+    --bgcolor: #b0b0b0
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: "poppins";
+}
+
+
+.main-border {
+    border: 1.4px solid #cec1c196;
+}
+
+section {
+    width: 465px;
+    height: 575px;
+    border-radius: 16px;
+    box-shadow: 1px 11px 26px 12px #f7eded;
+    padding: 35px 25px 20px;
+}
+
+.prcie-text {
+    font-size: 26px;
+    padding-left: 2px;
+}
+
+.night {
+    line-height: 43px;;
+    font-size: 20px;
+    padding-left: 3px;
+}
+
+.fa-star {
+    font-size: 18px;
+}
+
+.review-text {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.review a {
+    padding: 4px 0px 0px 6px;
+    color: #504c4cc4;
+    font-weight: 600;
+}
+
+
+.check-In-Out {
+    border: 1.4px solid var(--bgcolor);
+    width: 412px;
+    margin-top: 35px;
+    position: relative;
+    border-radius: 8px;
+}
+
+.check-inOut-p {
+    padding: 14px 80px 31px 16px;
+    color: #050505f2;
+
+}
+
+.check-out::before {
+    content: " ";
+    position: absolute;
+    width: 1.4px;
+    background-color: var(--bgcolor);
+    height: 88px;
+    top: -1px;
+    right: 193px;
+}
+
+.check-out, .check-in p {
+    --txtcolor: #000000;
+}
+
+.check-out, .check-in h1 {
+    --textcolor: #262626;
+}
+
+button {
+    padding: 15px 172px;
+    color: white;
+    background-image: linear-gradient(to right, #FB345A, #BD1E59);
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.main-parent {
+    position: relative;
+    height: 150px;
+}
+
+.form-body {
+    position: absolute;
+    top: 69px;
+}
+
+.reserve-btn {
+    text-align: center;
+    height: 118px;
+}
+
+.reserve-btn p {
+    color: var(--listText)
+}
+
+.main-price-details {
+    height: 75px;
+    margin-top: 35px;
+}
+
+.price-details {
+    height: 36px;
+}
+
+.price-details a {
+    color: var(--textcolor)
+}
+
+.main-price-details {
+    position: relative;
+}
+
+.border-after:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 411px;
+    background-color: var(--bgcolor);
+    opacity: 0.4;
+    top: 92px;
+}
+
+.drop-menu-body {
+    width: 100%;
+}
+
+.menu-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.circle-common-minus {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    outline: 1.4px solid #ebebeb;
+    padding: 1px 8px;
+}
+
+.circle-common-plus {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    outline: 1.4px solid #c9c0c0;
+    padding: 1px 8px;
+}
+
+.fa-minus {
+    color: #80808047;
+}
+
+.fa-plus {
+    color: #484646d1;
+    ;
+}
+
+/*start This code is related for select list */
+
+input {
+    position: absolute;
+    opacity: 0;
+}
+
+.form-body {
+    width: 100%;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px -2px rgb(0 0 0 / 50%);
+    background-color: #fff;
+}
+
+.tab-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    color: #272727;;
+    font-weight: bold;
+    cursor: pointer;
+    flex-direction: column;
+    line-height: 20px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 8px;
+
+}
+
+.tab-label p {
+    color: #393333eb;
+}
+
+.tab-label::after {
+    content: '\276F';
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all 0.35s;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    transform: rotateZ(90deg);
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.item-lists {
+    padding: 0 1em;
+    color:var(--textcolor);
+    background: white;
+    transition: all 0.35s;
+    box-shadow: 0 4px 4px -2px rgb(0 0 0 / 50%);
+    border-radius: 8px;
+}
+
+
+input:checked+.tab-label::after {
+    transform: rotate(-90deg);
+}
+
+input:checked~.item-lists {
+    opacity: 1;
+    visibility: visible;
+    padding: 1em;
+}
+
+.item-content-right {
+    width: 30%;
+}
+
+.fa-circle-minus {
+    color: #938d8d87;
+}
+
+.item-lists li {
+    margin-bottom: 20px;
+    line-height: 30px;
+
+}
+
+.form-body {
+    position: relative;
+    position: absolute;
+}
+
+.item-lists {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.item-lists li .item-lists-text{
+    color: var(--listText);
+}
+.item-content-left a {
+    color: var(--txtcolor);
+}
+
+.close a {
+    color: black;
+    font-weight: 900;
+}
+
+/*end This code is related for select list */
+

@@ -1,0 +1,75 @@
+/* --------------------For font-size-------------------- */
+
+
+.font-size-lg {
+    font-size: 24px;
+}
+
+.font-size-md {
+    font-size: 18px;
+}
+
+.font-size-base {
+    font-size: 16px;
+}
+
+.font-size-sm {
+    font-size: 16px;
+}
+
+.font-size-xsm {
+    font-size: 14px;
+}
+.font-size-xxsm {
+    font-size: 10px;
+}
+
+
+/* ----------Common -CSS-------------------------------- */
+
+/* -------------------------------for-flex----------------------- */
+
+.d-flex {
+    display: flex;
+
+}
+
+.d-space-between {
+    justify-content: space-between;
+}
+
+.d-space-around {
+    justify-content: space-around;
+}
+
+
+.d-flex-end {
+    justify-content: flex-end;
+    ;
+}
+
+.d-justify-content {
+    justify-content: center;
+}
+
+.d-flex-v {
+    align-items: center;
+}
+
+.d-direction {
+    flex-direction: column;
+}
+
+
+/* For Font weight*/
+
+.font-light {
+    font-weight: 500;
+}
+
+.font-bold {
+    font-weight: 600;
+}
+.font-bolder {
+    font-weight: 700;
+}
